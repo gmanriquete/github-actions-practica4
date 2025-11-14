@@ -44,3 +44,7 @@ jobs:
          run: |
             echo "plataforma: ${{ env.username }}"
             echo "plataforma: ${{ env.password }}"
+        
+       - name: "variables abiertas"
+         run: |
+            echo "plataforma: ${{ vars.PROJECT_VERSION }}"
