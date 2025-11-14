@@ -19,6 +19,9 @@ jobs:
       platform: servicios_nube
       region: PE-sur-2
       account: 154123456789
+
+      username: ${{secrets.USER}}
+      password: ${{secrets.password}}
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -36,3 +39,8 @@ jobs:
             echo "plataforma: ${{ env.platform }}"
             echo "region: ${{ env.region }}"
             echo "region: ${{ env.account }}"
+
+       - name: "variables de entorno"
+         run: |
+            echo "plataforma: ${{ env.username }}"
+            echo "plataforma: ${{ env.password }}"
