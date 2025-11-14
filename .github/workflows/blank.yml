@@ -48,3 +48,7 @@ jobs:
        - name: "variables abiertas"
          run: |
             echo "POJECT VERSION: ${{ vars.PROJECT_VERSION }}"
+
+       - name: "variables defecto"
+         run: |
+            echo "Evento: ${{toJSON(github.event)}}"
