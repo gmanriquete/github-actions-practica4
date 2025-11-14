@@ -47,4 +47,4 @@ jobs:
         
        - name: "variables abiertas"
          run: |
-            echo "plataforma: ${{ vars.PROJECT_VERSION }}"
+            echo "POJECT VERSION: ${{ vars.PROJECT_VERSION }}"
