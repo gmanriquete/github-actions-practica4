@@ -53,3 +53,4 @@ jobs:
          run: |
             echo "Evento: ${{toJSON(github.event)}}"
             echo "actor Github: $GITHUB_ACTOR"
+            echo "actor Github: $SSH_URL"
