@@ -26,6 +26,9 @@ jobs:
     steps:
        - name: "ejer1"
          run: echo "practica1"
+
+       - name: "ejer 2"
+         run: echo "practica 4"
           
        - name: "variables de entorno"
          if: ${{ env.region == 'PE-sur'}}
